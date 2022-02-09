@@ -1,0 +1,57 @@
+{
+  "item.tutorialmod.mythril_ingot": "Mythril Ingot",
+  "item.tutorialmod.mythril_nugget": "Mythril Nugget",
+  "item.tutorialmod.raw_mythril": "Raw Mythril",
+  "item.tutorialmod.dowsing_rod": "Dowsing Rod",
+  "item.tutorialmod.lilac_flower_bulb": "Lilac Flower Bulb",
+  "item.tutorialmod.grape": "Grape",
+
+  "item.tutorialmod.mythril_pickaxe": "Mythril Pickaxe",
+  "item.tutorialmod.mythril_axe": "Mythril Axe",
+  "item.tutorialmod.mythril_shovel": "Mythril Shovel",
+  "item.tutorialmod.mythril_hoe": "Mythril Hoe",
+  "item.tutorialmod.mythril_sword": "Mythril Sword",
+
+  "item.tutorialmod.mythril_helmet": "Mythril Helmet",
+  "item.tutorialmod.mythril_chestplate": "Mythril Chestplate",
+  "item.tutorialmod.mythril_leggings": "Mythril Leggings",
+  "item.tutorialmod.mythril_boots": "Mythril Boots",
+
+  "item.tutorialmod.magic_mythril_dust": "Magic Mythril Dust",
+  "item.tutorialmod.data_tablet": "Data Tablet",
+  "item.tutorialmod.grape_seeds": "Grape Seeds",
+  "item.tutorialmod.kaupenbow": "Kaupenbow",
+
+  "block.tutorialmod.lilac_flower": "Lilac Flower",
+  "block.tutorialmod.potted_lilac_flower": "Potted Lilac Flower",
+
+  "block.tutorialmod.mythril_block": "Mythril Block",
+  "block.tutorialmod.mythril_ore": "Mythril Ore",
+  "block.tutorialmod.raw_mythril_block": "Raw Mythril Block",
+  "block.tutorialmod.deepslate_mythril_ore": "Deepslate Mythril Ore",
+  "block.tutorialmod.netherrack_mythril_ore": "Netherrack Mythril Ore",
+  "block.tutorialmod.speedy_block": "Speedy Block",
+
+  "block.tutorialmod.mythril_button": "Mythril Button",
+  "block.tutorialmod.mythril_pressure_plate": "Mythril Pressure Plate",
+  "block.tutorialmod.mythril_fence": "Mythril Fence",
+  "block.tutorialmod.mythril_wall": "Mythril Wall",
+  "block.tutorialmod.mythril_fence_gate": "Mythril Fence Gate",
+
+  "block.tutorialmod.kaupen_door": "Kaupen Door",
+  "block.tutorialmod.kaupen_trapdoor": "Kaupen Trapdoor",
+  "block.tutorialmod.mythril_slab": "Mythril Slab",
+  "block.tutorialmod.mythril_stairs": "Mythril Stairs",
+
+  "block.tutorialmod.mythril_lamp": "Mythril Lamp",
+  "block.tutorialmod.winter_window": "Winter Window",
+  "block.tutorialmod.grape_vine": "Grape Vine",
+
+  "itemGroup.tutorialmod.mythril": "Mythril Tutorial Tab",
+
+  "item.tutorialmod.dowsing_rod.no_valuables": "No Valuables Found!",
+  "item.tutorialmod.dowsing_rod.tooltip.shift": "Right Click to find valuables",
+  "item.tutorialmod.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
+
+  "tooltip.tutorialmod.mythril_block": "A Magical Block"
+}
