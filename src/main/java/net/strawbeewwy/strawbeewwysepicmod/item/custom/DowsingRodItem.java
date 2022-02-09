@@ -49,7 +49,7 @@ public class DowsingRodItem extends Item {
             }
 
             if(!foundBlock) {
-                player.sendMessage(new TranslatableText("item.tutorialmod.dowsing_rod.no_valuables"), false);
+                player.sendMessage(new TranslatableText("item.strawbeewwysepicmod.dowsing_rod.no_valuables"), false);
             }
         }
 
@@ -64,7 +64,7 @@ public class DowsingRodItem extends Item {
                 player.getInventory().getStack(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET));
 
         NbtCompound nbtData = new NbtCompound();
-        nbtData.putString("tutorialmod.last_ore", "Found " + blockBelow.asItem().getName().getString() + " at (" +
+        nbtData.putString("strawbeewwysepicmod.last_ore", "Found " + blockBelow.asItem().getName().getString() + " at (" +
                 pos.getX() + ", "+ pos.getY() + ", "+ pos.getZ() + ")");
 
         dataTablet.setNbt(nbtData);
@@ -73,9 +73,9 @@ public class DowsingRodItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(Screen.hasShiftDown()) {
-            tooltip.add(new TranslatableText("item.tutorialmod.dowsing_rod.tooltip.shift"));
+            tooltip.add(new TranslatableText("item.strawbeewwysepicmod.dowsing_rod.tooltip.shift"));
         } else {
-            tooltip.add(new TranslatableText("item.tutorialmod.dowsing_rod.tooltip"));
+            tooltip.add(new TranslatableText("item.strawbeewwysepicmod.dowsing_rod.tooltip"));
         }
     }
 

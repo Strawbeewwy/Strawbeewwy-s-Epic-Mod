@@ -1,12 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.kaupenjoe.tutorialmod.mixin",
+  "package": "net.strawbeewwy.strawbeewwysepicmod.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "StrawbeewwyMixin"
   ],
   "injectors": {
     "defaultRequire": 1

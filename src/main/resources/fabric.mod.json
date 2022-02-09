@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "tutorialmod",
+  "id": "strawbeewwysepicmod",
   "version": "${version}",
 
-  "name": "Tutorial Mod",
+  "name": "strawbeewwysepicmod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Kaupenjoe!"
+    "strawbeewwy!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Strawbeewwy",
+    "sources": "https://github.com/Strawbeewwy/Strawbeewwy-s-Epic-Mod"
   },
 
   "license": "MIT",
@@ -19,14 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.kaupenjoe.tutorialmod.TutorialMod"
+      "net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod"
     ],
     "client": [
-      "net.kaupenjoe.tutorialmod.TutorialClientMod"
+      "net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicModClientMod"
     ]
   },
   "mixins": [
-    "tutorialmod.mixins.json"
+    "strawbeewwysepicmod.mixins.json"
   ],
 
   "depends": {

@@ -1,7 +1,7 @@
 package net.strawbeewwy.strawbeewwysepicmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.strawbeewwy.strawbeewwysepicmod.strawbeewwysepicmod;
+import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 import net.strawbeewwy.strawbeewwysepicmod.block.ModBlocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -74,10 +74,10 @@ public class ModItems {
 
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(strawbeewwysepicmod.MOD_ID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier(StrawbeewwysEpicMod.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        strawbeewwysepicmod.LOGGER.info("Registering Mod Items for " + strawbeewwysepicmod.MOD_ID);
+        StrawbeewwysEpicMod.LOGGER.info("Registering Mod Items for " + StrawbeewwysEpicMod.MOD_ID);
     }
 }

@@ -6,7 +6,7 @@ import net.strawbeewwy.strawbeewwysepicmod.block.ModBlocks;
 import net.strawbeewwy.strawbeewwysepicmod.util.ModModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
 
-public class TutorialClientMod implements ClientModInitializer {
+public class StrawbeewwysEpicModClientMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KAUPEN_DOOR, RenderLayer.getCutout());

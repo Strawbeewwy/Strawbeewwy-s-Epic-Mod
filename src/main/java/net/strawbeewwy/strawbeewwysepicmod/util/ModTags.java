@@ -1,7 +1,7 @@
 package net.strawbeewwy.strawbeewwysepicmod.util;
 
 import net.fabricmc.fabric.api.tag.TagFactory;
-import net.strawbeewwy.strawbeewwysepicmod.strawbeewwysepicmod;
+import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tag.Tag;
@@ -13,7 +13,7 @@ public class ModTags {
                 createTag("dowsing_rod_detectable_blocks");
 
         private static Tag.Identified<Block> createTag(String name) {
-            return TagFactory.BLOCK.create(new Identifier(strawbeewwysepicmod.MOD_ID, name));
+            return TagFactory.BLOCK.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));
         }
 
         private static Tag.Identified<Block> createCommonTag(String name) {
@@ -26,7 +26,7 @@ public class ModTags {
         public static final Tag.Identified<Item> MYTHRIL_NUGGETS = createCommonTag("mythril_nuggets");
 
         private static Tag.Identified<Item> createTag(String name) {
-            return TagFactory.ITEM.create(new Identifier(strawbeewwysepicmod.MOD_ID, name));
+            return TagFactory.ITEM.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));
         }
 
         private static Tag.Identified<Item> createCommonTag(String name) {

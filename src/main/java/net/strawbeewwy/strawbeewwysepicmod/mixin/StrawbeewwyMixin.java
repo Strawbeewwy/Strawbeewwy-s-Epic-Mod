@@ -1,6 +1,6 @@
 package net.strawbeewwy.strawbeewwysepicmod.mixin;
 
-import net.strawbeewwy.strawbeewwysepicmod.strawbeewwysepicmod;
+import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -8,9 +8,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
-public class ExampleMixin {
+public class StrawbeewwyMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		strawbeewwysepicmod.LOGGER.info("This line is printed by an example mod mixin!");
+		StrawbeewwysEpicMod.LOGGER.info("This line is printed by an example mod mixin!");
 	}
 }

@@ -2,7 +2,7 @@ package net.strawbeewwy.strawbeewwysepicmod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.strawbeewwy.strawbeewwysepicmod.strawbeewwysepicmod;
+import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 import net.strawbeewwy.strawbeewwysepicmod.block.custom.*;
 import net.strawbeewwy.strawbeewwysepicmod.item.ModItemGroup;
 import net.minecraft.block.*;
@@ -102,11 +102,11 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
         registerBlockItem(name, block, group, tooltipKey);
-        return Registry.register(Registry.BLOCK, new Identifier(strawbeewwysepicmod.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(StrawbeewwysEpicMod.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group, String tooltipKey) {
-        return Registry.register(Registry.ITEM, new Identifier(strawbeewwysepicmod.MOD_ID, name),
+        return Registry.register(Registry.ITEM, new Identifier(StrawbeewwysEpicMod.MOD_ID, name),
             new BlockItem(block, new FabricItemSettings().group(group)) {
                 @Override
                 public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
@@ -116,20 +116,20 @@ public class ModBlocks {
     }
 
     private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
-        return Registry.register(Registry.BLOCK, new Identifier(strawbeewwysepicmod.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(StrawbeewwysEpicMod.MOD_ID, name), block);
     }
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
-        return Registry.register(Registry.BLOCK, new Identifier(strawbeewwysepicmod.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(StrawbeewwysEpicMod.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
-        return Registry.register(Registry.ITEM, new Identifier(strawbeewwysepicmod.MOD_ID, name),
+        return Registry.register(Registry.ITEM, new Identifier(StrawbeewwysEpicMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 
     public static void registerModBlocks() {
-        strawbeewwysepicmod.LOGGER.info("Registering ModBlocks for " + strawbeewwysepicmod.MOD_ID);
+        StrawbeewwysEpicMod.LOGGER.info("Registering ModBlocks for " + StrawbeewwysEpicMod.MOD_ID);
     }
 }
