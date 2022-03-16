@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "tutorialmod:mythril_block"
+      "item": "strawbeewwysepicmod:mythril_block"
     }
   ],
   "result": {
-    "item": "tutorialmod:mythril_ingot",
+    "item": "strawbeewwysepicmod:mythril_ingot",
     "count": 9
   }
 }

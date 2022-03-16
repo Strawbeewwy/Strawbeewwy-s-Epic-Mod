@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "tutorialmod:block/lilac_flower"
+    "cross": "strawbeewwysepicmod:block/lilac_flower"
   }
 }

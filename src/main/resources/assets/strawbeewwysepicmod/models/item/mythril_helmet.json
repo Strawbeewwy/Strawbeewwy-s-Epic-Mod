@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/mythril_helmet"
+    "layer0": "strawbeewwysepicmod:item/mythril_helmet"
   }
 }

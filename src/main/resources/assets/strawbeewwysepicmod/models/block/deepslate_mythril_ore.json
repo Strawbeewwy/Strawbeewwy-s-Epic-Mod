@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/deepslate_mythril_ore"
+    "all": "strawbeewwysepicmod:block/deepslate_mythril_ore"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "tutorialmod:item/mythril_hoe"
+    "layer0": "strawbeewwysepicmod:item/mythril_hoe"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "tutorialmod:item/mythril_axe"
+    "layer0": "strawbeewwysepicmod:item/mythril_axe"
   }
 }

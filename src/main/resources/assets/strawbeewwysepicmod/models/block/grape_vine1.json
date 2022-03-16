@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "tutorialmod:block/grape_vine1"
+    "crop": "strawbeewwysepicmod:block/grape_vine1"
   }
 }

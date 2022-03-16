@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/mythril_chestplate"
+    "layer0": "strawbeewwysepicmod:item/mythril_chestplate"
   }
 }

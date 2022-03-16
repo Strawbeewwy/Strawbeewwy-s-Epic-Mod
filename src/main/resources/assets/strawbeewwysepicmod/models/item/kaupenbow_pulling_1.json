@@ -1,6 +1,6 @@
 {
-    "parent": "tutorialmod:item/kaupenbow",
+    "parent": "strawbeewwysepicmod:item/kaupenbow",
     "textures": {
-        "layer0": "tutorialmod:item/kaupenbow_pulling_1"
+        "layer0": "strawbeewwysepicmod:item/kaupenbow_pulling_1"
     }
 }

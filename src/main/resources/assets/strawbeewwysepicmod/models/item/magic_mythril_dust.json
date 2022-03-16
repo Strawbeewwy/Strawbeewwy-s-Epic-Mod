@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/magic_mythril_dust"
+    "layer0": "strawbeewwysepicmod:item/magic_mythril_dust"
   }
 }

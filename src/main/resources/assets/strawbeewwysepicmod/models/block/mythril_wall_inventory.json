@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "tutorialmod:block/mythril_block"
+    "wall": "strawbeewwysepicmod:block/mythril_block"
   }
 }

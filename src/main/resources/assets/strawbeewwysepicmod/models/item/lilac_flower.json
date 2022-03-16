@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:block/lilac_flower"
+    "layer0": "strawbeewwysepicmod:block/lilac_flower"
   }
 }

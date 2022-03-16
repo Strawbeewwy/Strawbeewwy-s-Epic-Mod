@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side",
   "textures": {
-    "wall": "tutorialmod:block/mythril_block"
+    "wall": "strawbeewwysepicmod:block/mythril_block"
   }
 }

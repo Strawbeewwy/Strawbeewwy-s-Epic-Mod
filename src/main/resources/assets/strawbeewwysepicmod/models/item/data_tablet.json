@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/data_tablet"
+    "layer0": "strawbeewwysepicmod:item/data_tablet"
   }
 }

@@ -71,28 +71,28 @@
         }
     },
     "textures": {
-        "layer0": "tutorialmod:item/kaupenbow"
+        "layer0": "strawbeewwysepicmod:item/kaupenbow"
     },
     "overrides": [
         {
             "predicate": {
                 "minecraft:pulling": 1
             },
-            "model": "tutorialmod:item/kaupenbow_pulling_0"
+            "model": "strawbeewwysepicmod:item/kaupenbow_pulling_0"
         },
         {
             "predicate": {
                 "minecraft:pulling": 1,
                 "minecraft:pull": 0.65
             },
-            "model": "tutorialmod:item/kaupenbow_pulling_1"
+            "model": "strawbeewwysepicmod:item/kaupenbow_pulling_1"
         },
         {
             "predicate": {
                 "minecraft:pulling": 1,
                 "minecraft:pull": 0.9
             },
-            "model": "tutorialmod:item/kaupenbow_pulling_2"
+            "model": "strawbeewwysepicmod:item/kaupenbow_pulling_2"
         }
     ]
 }

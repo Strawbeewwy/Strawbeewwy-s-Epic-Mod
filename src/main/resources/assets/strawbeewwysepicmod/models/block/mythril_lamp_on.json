@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/mythril_lamp_on"
+    "all": "strawbeewwysepicmod:block/mythril_lamp_on"
   }
 }

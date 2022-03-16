@@ -13,17 +13,17 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "tutorialmod:grape_vine",
+                  "block": "strawbeewwysepicmod:grape_vine",
                   "properties": {
                     "age": "7"
                   }
                 }
               ],
-              "name": "tutorialmod:grape"
+              "name": "strawbeewwysepicmod:grape"
             },
             {
               "type": "minecraft:item",
-              "name": "tutorialmod:grape_seeds"
+              "name": "strawbeewwysepicmod:grape_seeds"
             }
           ]
         }
@@ -46,13 +46,13 @@
               }
             }
           ],
-          "name": "tutorialmod:grape_seeds"
+          "name": "strawbeewwysepicmod:grape_seeds"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "tutorialmod:grape_vine",
+          "block": "strawbeewwysepicmod:grape_vine",
           "properties": {
             "age": "7"
           }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/grape_seeds"
+    "layer0": "strawbeewwysepicmod:item/grape_seeds"
   }
 }

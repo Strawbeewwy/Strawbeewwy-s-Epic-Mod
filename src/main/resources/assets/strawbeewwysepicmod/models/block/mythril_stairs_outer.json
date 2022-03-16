@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/outer_stairs",
   "textures": {
-    "bottom": "tutorialmod:block/mythril_block",
-    "top": "tutorialmod:block/mythril_block",
-    "side": "tutorialmod:block/mythril_block"
+    "bottom": "strawbeewwysepicmod:block/mythril_block",
+    "top": "strawbeewwysepicmod:block/mythril_block",
+    "side": "strawbeewwysepicmod:block/mythril_block"
   }
 }
