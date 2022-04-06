@@ -1,5 +1,6 @@
 package net.strawbeewwy.strawbeewwysepicmod;
 
+
 import net.fabricmc.api.ModInitializer;
 import net.strawbeewwy.strawbeewwysepicmod.block.ModBlocks;
 import net.strawbeewwy.strawbeewwysepicmod.item.ModItems;
