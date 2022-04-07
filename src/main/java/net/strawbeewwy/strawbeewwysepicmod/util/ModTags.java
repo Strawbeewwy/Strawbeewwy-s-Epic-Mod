@@ -1,11 +1,11 @@
 package net.strawbeewwy.strawbeewwysepicmod.util;
 
 import net.fabricmc.fabric.api.tag.TagFactory;
-import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
+import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 
 public class ModTags {
     public static class Blocks {
@@ -24,6 +24,7 @@ public class ModTags {
     public static class Items {
         public static final Tag.Identified<Item> MYTHRIL_INGOTS = createCommonTag("mythril_ingots");
         public static final Tag.Identified<Item> MYTHRIL_NUGGETS = createCommonTag("mythril_nuggets");
+        public static final Tag.Identified<Item> RING_OF_FRIENDSHIP = createCommonTag("ring_of_friendship");
 
         private static Tag.Identified<Item> createTag(String name) {
             return TagFactory.ITEM.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));
