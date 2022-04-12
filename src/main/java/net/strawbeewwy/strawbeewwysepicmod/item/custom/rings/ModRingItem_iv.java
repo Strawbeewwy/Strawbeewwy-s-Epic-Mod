@@ -14,8 +14,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 import java.util.UUID;
-public class ModRingItem_iiiii extends ModRingItem{
-    public ModRingItem_iiiii(Settings settings) {
+
+public class ModRingItem_iv extends ModRingItem{
+    public ModRingItem_iv(Settings settings) {
         super(settings);
     }
 
@@ -59,19 +60,19 @@ public class ModRingItem_iiiii extends ModRingItem{
         float quality = 0;
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:1")) {
+            if (stack.getNbt().toString().contains("{quality:1}")) {
                 quality = 0.01F;
             }
-            if (stack.getNbt().toString().contains("quality:2")) {
+            if (stack.getNbt().toString().contains("{quality:2}")) {
                 quality = 0.02F;
             }
-            if (stack.getNbt().toString().contains("quality:3")) {
+            if (stack.getNbt().toString().contains("{quality:3}")) {
                 quality = 0.03F;
             }
-            if (stack.getNbt().toString().contains("quality:4")) {
+            if (stack.getNbt().toString().contains("{quality:4}")) {
                 quality = 0.04F;
             }
-            if (stack.getNbt().toString().contains("quality:5")) {
+            if (stack.getNbt().toString().contains("{quality:5}")) {
                 quality = 0.05F;
             }
         }
@@ -79,39 +80,39 @@ public class ModRingItem_iiiii extends ModRingItem{
 
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
-            if (stack.getNbt().contains("topaz_5")) {
-                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
-                        0.09 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
-                        10, EntityAttributeModifier.Operation.ADDITION));
+            if (stack.getNbt().contains("topaz_4")) {
+                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:max_health",
+                        0.08 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:max_health",
+                        8, EntityAttributeModifier.Operation.ADDITION));
             }
         }
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
-            if (stack.getNbt().contains("sapphire_5")) {
-                modifiers.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(uuid, "guidemod:armor",
-                        0.3 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
-                        10, EntityAttributeModifier.Operation.ADDITION));
+            if (stack.getNbt().contains("sapphire_4")) {
+                modifiers.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:armor",
+                        0.25 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:max_health",
+                        8, EntityAttributeModifier.Operation.ADDITION));
             }
         }
 
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
-            if (stack.getNbt().contains("ruby_5")) {
+            if (stack.getNbt().contains("ruby_4")) {
                 modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "guidemod:attack_damage",
-                        0.09 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                        0.08 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
                 modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
-                        10, EntityAttributeModifier.Operation.ADDITION));
+                        8, EntityAttributeModifier.Operation.ADDITION));
             }
         }
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
-            if (stack.getNbt().contains("jade_5")) {
+            if (stack.getNbt().contains("jade_4")) {
                 modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(uuid, "guidemod:attack_speed",
-                        0.09 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                        0.08 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
                 modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
-                        10, EntityAttributeModifier.Operation.ADDITION));
+                        8, EntityAttributeModifier.Operation.ADDITION));
             }
         }
         return modifiers;

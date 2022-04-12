@@ -81,18 +81,18 @@ public class ModRingItem_iii extends ModRingItem{
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
             if (stack.getNbt().contains("topaz_3")) {
-                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
+                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:max_health",
                         0.07 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
+                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:max_health",
                         6, EntityAttributeModifier.Operation.ADDITION));
             }
         }
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
             if (stack.getNbt().contains("sapphire_3")) {
-                modifiers.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(uuid, "guidemod:armor",
+                modifiers.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:armor",
                         0.2 + quality, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "guidemod:max_health",
+                modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "strawbeewwysepicmod:max_health",
                         6, EntityAttributeModifier.Operation.ADDITION));
             }
         }

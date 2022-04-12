@@ -1,10 +1,25 @@
 {
   "replace": false,
   "values": [
-    "coolstuff:polished_copper_ring",
-    "coolstuff:polished_iron_ring",
-    "coolstuff:polished_gold_ring",
-    "coolstuff:polished_diamond_ring",
-    "coolstuff:polished_netherite_ring"
+    "strawbeewwysepicmod:jade_copper_ring",
+    "strawbeewwysepicmod:jade_diamond_ring",
+    "strawbeewwysepicmod:jade_gold_ring",
+    "strawbeewwysepicmod:jade_iron_ring",
+    "strawbeewwysepicmod:jade_netherite_ring",
+    "strawbeewwysepicmod:ruby_copper_ring",
+    "strawbeewwysepicmod:ruby_diamond_ring",
+    "strawbeewwysepicmod:ruby_gold_ring",
+    "strawbeewwysepicmod:ruby_iron_ring",
+    "strawbeewwysepicmod:ruby_netherite_ring",
+    "strawbeewwysepicmod:sapphire_copper_ring",
+    "strawbeewwysepicmod:sapphire_diamond_ring",
+    "strawbeewwysepicmod:sapphire_gold_ring",
+    "strawbeewwysepicmod:sapphire_iron_ring",
+    "strawbeewwysepicmod:sapphire_netherite_ring",
+    "strawbeewwysepicmod:topaz_copper_ring",
+    "strawbeewwysepicmod:topaz_diamond_ring",
+    "strawbeewwysepicmod:topaz_gold_ring",
+    "strawbeewwysepicmod:topaz_iron_ring",
+    "strawbeewwysepicmod:topaz_netherite_ring"
   ]
 }

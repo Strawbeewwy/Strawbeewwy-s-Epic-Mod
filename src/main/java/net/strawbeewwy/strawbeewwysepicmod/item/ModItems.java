@@ -95,9 +95,6 @@ public class ModItems {
     public static final Item RING_NETHERITE_SETTING = registerItem("ring_netherite_setting",
             new Item(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
-    public static final Item NECKLACE_CHAIN_COPPER = registerItem("necklace_chain_copper",
-            new Item(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
-
     public static final Item POLISHED_COPPER_RING = registerItem("polished_copper_ring",
             new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_IRON_RING = registerItem("polished_iron_ring",
@@ -105,9 +102,9 @@ public class ModItems {
     public static final Item POLISHED_GOLD_RING = registerItem("polished_gold_ring",
             new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_DIAMOND_RING = registerItem("polished_diamond_ring",
-            new ModRingItem_iiii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_NETHERITE_RING = registerItem("polished_netherite_ring",
-            new ModRingItem_iiiii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item BASE_COPPER_RING = registerItem("base_copper_ring",
             new ModBaseRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
@@ -132,40 +129,40 @@ public class ModItems {
             new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_IRON_RING = registerItem("ruby_iron_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_IRON_RING = registerItem("sapphire_iron_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_IRON_RING = registerItem("jade_iron_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_IRON_RING = registerItem("topaz_iron_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_GOLD_RING = registerItem("ruby_gold_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_GOLD_RING = registerItem("sapphire_gold_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_GOLD_RING = registerItem("jade_gold_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_GOLD_RING = registerItem("topaz_gold_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_DIAMOND_RING = registerItem("ruby_diamond_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_DIAMOND_RING = registerItem("sapphire_diamond_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_DIAMOND_RING = registerItem("jade_diamond_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_DIAMOND_RING = registerItem("topaz_diamond_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_NETHERITE_RING = registerItem("ruby_netherite_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_NETHERITE_RING = registerItem("sapphire_netherite_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_NETHERITE_RING = registerItem("jade_netherite_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_NETHERITE_RING = registerItem("topaz_netherite_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
 
 
