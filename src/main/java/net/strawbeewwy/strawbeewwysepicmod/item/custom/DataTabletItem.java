@@ -36,7 +36,7 @@ public class DataTabletItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(stack.hasNbt()) {
-            String currentOre = stack.getNbt().getString("tutorialmod.last_ore");
+            String currentOre = stack.getNbt().getString("strawbeewwysepicmod.last_ore");
             tooltip.add(new LiteralText(currentOre));
         }
     }

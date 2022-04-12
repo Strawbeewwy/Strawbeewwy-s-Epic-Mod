@@ -3,6 +3,8 @@
     "player"
   ],
   "slots": [
-    "hand/ring"
+
+    "chest/necklace",
+    "offhand/ring"
   ]
 }

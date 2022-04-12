@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    "xox",
+    " x "
+  ],
+  "key": {
+
+    "x": {
+      "item": "strawbeewwysepicmod:flawed_jade"
+    },
+    "o": {
+      "item": "strawbeewwysepicmod:raw_resin"
+    }
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:jade"
+  }
+}

@@ -24,7 +24,6 @@ public class ModTags {
     public static class Items {
         public static final Tag.Identified<Item> MYTHRIL_INGOTS = createCommonTag("mythril_ingots");
         public static final Tag.Identified<Item> MYTHRIL_NUGGETS = createCommonTag("mythril_nuggets");
-        public static final Tag.Identified<Item> RING_OF_FRIENDSHIP = createCommonTag("ring_of_friendship");
 
         private static Tag.Identified<Item> createTag(String name) {
             return TagFactory.ITEM.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));

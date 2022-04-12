@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "strawbeewwysepicmod:base_iron_ring"
+  },
+  "addition": {
+    "item": "strawbeewwysepicmod:ring_iron_setting"
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:polished_iron_ring"
+  }
+}

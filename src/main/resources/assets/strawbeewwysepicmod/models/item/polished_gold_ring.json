@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "strawbeewwysepicmod:item/gear/trinkets/rings/polished_gold_ring"
+  },
+
+  "overrides":
+  [
+    {"predicate": {"custom_model_data":301}, "model": "strawbeewwysepicmod:item/ruby_gold_ring"},
+    {"predicate": {"custom_model_data":302}, "model": "strawbeewwysepicmod:item/sapphire_gold_ring"},
+    {"predicate": {"custom_model_data":303}, "model": "strawbeewwysepicmod:item/jade_gold_ring"},
+    {"predicate": {"custom_model_data":304}, "model": "strawbeewwysepicmod:item/topaz_gold_ring"}
+  ]
+}

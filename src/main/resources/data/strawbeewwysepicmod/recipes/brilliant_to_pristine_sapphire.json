@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    " o ",
+    " x "
+  ],
+  "key": {
+
+    "x": {
+      "item": "strawbeewwysepicmod:brilliant_sapphire"
+    },
+    "o": {
+      "item": "strawbeewwysepicmod:resin_flask"
+    }
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:pristine_sapphire"
+  }
+}

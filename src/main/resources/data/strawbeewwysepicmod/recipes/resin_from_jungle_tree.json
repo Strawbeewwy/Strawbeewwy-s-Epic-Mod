@@ -1,0 +1,16 @@
+{
+  "block_in": "jungle_log",
+  "post": [
+    {
+      "type": "drop_item",
+      "item": "strawbeewwysepicmod:raw_resin",
+      "contextual": {
+        "type": "chance",
+        "chance": 0.1
+      }
+    },
+    {
+      "type": "damage_item"
+    }
+  ]
+}

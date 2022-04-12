@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "strawbeewwysepicmod:base_diamond_ring"
+  },
+  "addition": {
+    "item": "strawbeewwysepicmod:ring_diamond_setting"
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:polished_diamond_ring"
+  }
+}

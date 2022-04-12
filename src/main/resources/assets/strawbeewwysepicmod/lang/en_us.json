@@ -55,4 +55,57 @@
 
   "tooltip.strawbeewwysepicmod.mythril_block": "A Magical Block",
 
+  "item.strawbeewwysepicmod.sapphire_gem_tip_line_1": "Crafting Material",
+  "item.strawbeewwysepicmod.sapphire_gem_tip_line_2": "Stat Affinity: §aArmor§r",
+  "item.strawbeewwysepicmod.sapphire_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+
+  "item.strawbeewwysepicmod.ruby_gem_tip_line_1": "Crafting Material",
+  "item.strawbeewwysepicmod.ruby_gem_tip_line_2": "Stat Affinity: §aDamage§r",
+  "item.strawbeewwysepicmod.ruby_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+
+  "item.strawbeewwysepicmod.topaz_gem_tip_line_1": "Crafting Material",
+  "item.strawbeewwysepicmod.topaz_gem_tip_line_2": "Stat Affinity: §aHealth§r",
+  "item.strawbeewwysepicmod.topaz_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+
+  "item.strawbeewwysepicmod.jade_gem_tip_line_1": "Crafting Material",
+  "item.strawbeewwysepicmod.jade_gem_tip_line_2": "Stat Affinity: §aAttackspeed§r",
+  "item.strawbeewwysepicmod.jade_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+
+  "item.strawbeewwysepicmod.ring": "Ring",
+  "item.strawbeewwysepicmod.life": "Life",
+  "item.strawbeewwysepicmod.quality_1": "Quality: ★",
+  "item.strawbeewwysepicmod.quality_2": "Quality: §e★★",
+  "item.strawbeewwysepicmod.quality_3": "Quality: §b★★★",
+  "item.strawbeewwysepicmod.quality_4": "Quality: §d★★★★",
+  "item.strawbeewwysepicmod.quality_5": "Quality: §6★★★★★",
+
+  "item.strawbeewwysepicmod.polished_copper_ring": "Polished Copper Ring",
+  "item.strawbeewwysepicmod.ruby_copper_ring": "Ruby Copper Ring",
+  "item.strawbeewwysepicmod.sapphire_copper_ring": "Sapphire Copper Ring",
+  "item.strawbeewwysepicmod.jade_copper_ring": "Jade Copper Ring",
+  "item.strawbeewwysepicmod.topaz_copper_ring": "Topaz Copper Ring",
+
+  "item.strawbeewwysepicmod.polished_iron_ring": "Polished Iron Ring",
+  "item.strawbeewwysepicmod.ruby_iron_ring": "Ruby Iron Ring",
+  "item.strawbeewwysepicmod.sapphire_iron_ring": "Sapphire Iron Ring",
+  "item.strawbeewwysepicmod.jade_iron_ring": "Jade Iron Ring",
+  "item.strawbeewwysepicmod.topaz_iron_ring": "Topaz Iron Ring",
+
+  "item.strawbeewwysepicmod.polished_gold_ring": "Polished Gold Ring",
+  "item.strawbeewwysepicmod.ruby_gold_ring": "Ruby Gold Ring",
+  "item.strawbeewwysepicmod.sapphire_gold_ring": "Sapphire Gold Ring",
+  "item.strawbeewwysepicmod.jade_gold_ring": "Jade Gold Ring",
+  "item.strawbeewwysepicmod.topaz_gold_ring": "Topaz Gold Ring",
+
+  "item.strawbeewwysepicmod.polished_diamond_ring": "Polished Diamond Ring",
+  "item.strawbeewwysepicmod.ruby_diamond_ring": "Ruby Diamond Ring",
+  "item.strawbeewwysepicmod.sapphire_diamond_ring": "Sapphire Diamond Ring",
+  "item.strawbeewwysepicmod.jade_diamond_ring": "Jade Diamond Ring",
+  "item.strawbeewwysepicmod.topaz_diamond_ring": "Topaz Diamond Ring",
+
+  "item.strawbeewwysepicmod.polished_netherite_ring": "Polished Netherite Ring",
+  "item.strawbeewwysepicmod.ruby_netherite_ring": "Ruby Netherite Ring",
+  "item.strawbeewwysepicmod.sapphire_netherite_ring": "Sapphire Netherite Ring",
+  "item.strawbeewwysepicmod.jade_netherite_ring": "Jade Netherite Ring",
+  "item.strawbeewwysepicmod.topaz_netherite_ring": "Topaz Netherite Ring"
 }

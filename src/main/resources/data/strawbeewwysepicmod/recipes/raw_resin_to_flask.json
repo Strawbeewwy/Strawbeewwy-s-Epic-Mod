@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xux"
+  ],
+  "key": {
+
+
+    "x": {
+      "item": "strawbeewwysepicmod:raw_resin"
+    },
+
+    "u": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:resin_flask"
+  }
+}

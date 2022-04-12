@@ -1,0 +1,16 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "strawbeewwysepicmod:item/gear/trinkets/rings/polished_diamond_ring"
+  },
+
+  "overrides":
+  [
+
+    {"predicate": {"custom_model_data":401}, "model": "strawbeewwysepicmod:item/ruby_diamond_ring"},
+    {"predicate": {"custom_model_data":402}, "model": "strawbeewwysepicmod:item/sapphire_diamond_ring"},
+    {"predicate": {"custom_model_data":403}, "model": "strawbeewwysepicmod:item/jade_diamond_ring"},
+    {"predicate": {"custom_model_data":404}, "model": "strawbeewwysepicmod:item/topaz_diamond_ring"}
+
+  ]
+}

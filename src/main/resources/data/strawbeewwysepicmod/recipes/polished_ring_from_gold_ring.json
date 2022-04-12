@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "strawbeewwysepicmod:base_gold_ring"
+  },
+  "addition": {
+    "item": "strawbeewwysepicmod:ring_gold_setting"
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:polished_gold_ring"
+  }
+}

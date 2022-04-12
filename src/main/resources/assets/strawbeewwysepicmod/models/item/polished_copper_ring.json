@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "strawbeewwysepicmod:item/gear/trinkets/rings/polished_copper_ring"
+  },
+
+  "overrides":
+  [
+    {"predicate": {"custom_model_data":101}, "model": "strawbeewwysepicmod:item/ruby_copper_ring"},
+    {"predicate": {"custom_model_data":102}, "model": "strawbeewwysepicmod:item/sapphire_copper_ring"},
+    {"predicate": {"custom_model_data":103}, "model": "strawbeewwysepicmod:item/jade_copper_ring"},
+    {"predicate": {"custom_model_data":104}, "model": "strawbeewwysepicmod:item/topaz_copper_ring"}
+  ]
+}

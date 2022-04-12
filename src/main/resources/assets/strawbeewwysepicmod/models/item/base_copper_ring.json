@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "strawbeewwysepicmod:item/gear/trinkets/rings/base_copper_ring"
+  }
+
+}
