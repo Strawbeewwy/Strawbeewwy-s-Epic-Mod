@@ -8,10 +8,10 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.strawbeewwy.strawbeewwysepicmod.item.custom.JadeGemItems;
-import net.strawbeewwy.strawbeewwysepicmod.item.custom.RubyGemItems;
-import net.strawbeewwy.strawbeewwysepicmod.item.custom.SapphireGemItems;
-import net.strawbeewwy.strawbeewwysepicmod.item.custom.TopazGemItems;
+import net.strawbeewwy.strawbeewwysepicmod.item.custom.gems.JadeBaseGemItems;
+import net.strawbeewwy.strawbeewwysepicmod.item.custom.gems.RubyBaseGemItems;
+import net.strawbeewwy.strawbeewwysepicmod.item.custom.gems.SapphireBaseGemItems;
+import net.strawbeewwy.strawbeewwysepicmod.item.custom.gems.TopazBaseGemItems;
 import net.strawbeewwy.strawbeewwysepicmod.item.custom.rings.*;
 import net.strawbeewwy.strawbeewwysepicmod.item.custom.*;
 
@@ -96,15 +96,15 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item POLISHED_COPPER_RING = registerItem("polished_copper_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_IRON_RING = registerItem("polished_iron_ring",
-            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_GOLD_RING = registerItem("polished_gold_ring",
-            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_DIAMOND_RING = registerItem("polished_diamond_ring",
-            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item POLISHED_NETHERITE_RING = registerItem("polished_netherite_ring",
-            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item BASE_COPPER_RING = registerItem("base_copper_ring",
             new ModBaseRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
@@ -120,49 +120,49 @@ public class ModItems {
     //GEAR
     //TRINKETS
     public static final Item RUBY_COPPER_RING = registerItem("ruby_copper_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemRuby(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_COPPER_RING = registerItem("sapphire_copper_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemSapphire(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_COPPER_RING = registerItem("jade_copper_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemJade(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_COPPER_RING = registerItem("topaz_copper_ring",
-            new ModRingItem_i(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemTopaz(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_IRON_RING = registerItem("ruby_iron_ring",
-            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemRuby(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_IRON_RING = registerItem("sapphire_iron_ring",
-            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemSapphire(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_IRON_RING = registerItem("jade_iron_ring",
-            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemJade(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_IRON_RING = registerItem("topaz_iron_ring",
-            new ModRingItem_ii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemTopaz(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_GOLD_RING = registerItem("ruby_gold_ring",
-            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemRuby(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_GOLD_RING = registerItem("sapphire_gold_ring",
-            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemSapphire(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_GOLD_RING = registerItem("jade_gold_ring",
-            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemJade(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_GOLD_RING = registerItem("topaz_gold_ring",
-            new ModRingItem_iii(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemTopaz(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_DIAMOND_RING = registerItem("ruby_diamond_ring",
-            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemRuby(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_DIAMOND_RING = registerItem("sapphire_diamond_ring",
-            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemSapphire(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_DIAMOND_RING = registerItem("jade_diamond_ring",
-            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemJade(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_DIAMOND_RING = registerItem("topaz_diamond_ring",
-            new ModRingItem_iv(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemTopaz(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
     public static final Item RUBY_NETHERITE_RING = registerItem("ruby_netherite_ring",
-            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemRuby(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item SAPPHIRE_NETHERITE_RING = registerItem("sapphire_netherite_ring",
-            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemSapphire(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item JADE_NETHERITE_RING = registerItem("jade_netherite_ring",
-            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemJade(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item TOPAZ_NETHERITE_RING = registerItem("topaz_netherite_ring",
-            new ModRingItem_v(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+            new ModRingItemTopaz(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
 
 
@@ -232,64 +232,64 @@ public class ModItems {
 
     //CUT GEMS
     public static final Item CHIPPED_RUBY = registerItem("chipped_ruby",
-            new RubyGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new RubyBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item CHIPPED_SAPPHIRE = registerItem("chipped_sapphire",
-            new SapphireGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new SapphireBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item CHIPPED_JADE = registerItem("chipped_jade",
-            new JadeGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new JadeBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item CHIPPED_TOPAZ = registerItem("chipped_topaz",
-            new TopazGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new TopazBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item FLAWED_RUBY = registerItem("flawed_ruby",
-            new RubyGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new RubyBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item FLAWED_SAPPHIRE = registerItem("flawed_sapphire",
-            new SapphireGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new SapphireBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item FLAWED_JADE = registerItem("flawed_jade",
-            new JadeGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new JadeBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item FLAWED_TOPAZ = registerItem("flawed_topaz",
-            new TopazGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
+            new TopazBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
     public static final Item RUBY = registerItem("ruby",
-            new RubyGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
+            new RubyBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
 
     public static final Item SAPPHIRE = registerItem("sapphire",
-            new SapphireGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
+            new SapphireBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
 
     public static final Item JADE = registerItem("jade",
-            new JadeGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
+            new JadeBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
 
     public static final Item topaz = registerItem("topaz",
-            new TopazGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
+            new TopazBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
 
     public static final Item BRILLIANT_RUBY = registerItem("brilliant_ruby",
-            new RubyGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
+            new RubyBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
 
     public static final Item BRILLIANT_SAPPHIRE = registerItem("brilliant_sapphire",
-            new SapphireGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
+            new SapphireBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
 
     public static final Item BRILLIANT_JADE = registerItem("brilliant_jade",
-            new JadeGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
+            new JadeBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
 
     public static final Item BRILLIANT_TOPAZ = registerItem("brilliant_topaz",
-            new TopazGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
+            new TopazBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.RARE)) );
 
     public static final Item PRISTINE_RUBY = registerItem("pristine_ruby",
-            new RubyGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
+            new RubyBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
 
     public static final Item PRISTINE_SAPPHIRE = registerItem("pristine_sapphire",
-            new SapphireGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
+            new SapphireBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
 
     public static final Item PRISTINE_JADE = registerItem("pristine_jade",
-            new JadeGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
+            new JadeBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
 
     public static final Item PRISTINE_TOPAZ = registerItem("pristine_topaz",
-            new TopazGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
+            new TopazBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.EPIC)) );
 
     public static final Item POCKET_GEODE = registerItem("pocket_geode",
             new Item(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );

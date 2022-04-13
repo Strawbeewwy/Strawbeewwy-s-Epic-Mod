@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient":
+  {
+    "item": "strawbeewwysepicmod:tiny_raw_topaz"
+  },
+  "result": "strawbeewwysepicmod:chipped_topaz",
+  "experience": 0.1,
+  "cookingtime": 1000
+
+}

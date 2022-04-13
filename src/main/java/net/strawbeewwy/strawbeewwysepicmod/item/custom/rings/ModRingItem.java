@@ -18,38 +18,21 @@ public class ModRingItem extends TrinketItem {
         super(settings);
     }
 
-
-
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext tooltipContext){
         if (stack.hasNbt()) {
             assert stack.getNbt() != null;
             if (stack.getNbt().toString().contains("quality:1")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_1"));
-
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:2")) {
+            } else if (stack.getNbt().toString().contains("quality:2")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_2"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:3")) {
+            } else if (stack.getNbt().toString().contains("quality:3")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_3"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:4")) {
+            } else if (stack.getNbt().toString().contains("quality:4")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_4"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:5")) {
+            } else if (stack.getNbt().toString().contains("quality:5")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_5"));
+            } else {
+                tooltip.add(new TranslatableText("item.strawbeewwysepicmod.qualityerror"));
             }
         }
     }

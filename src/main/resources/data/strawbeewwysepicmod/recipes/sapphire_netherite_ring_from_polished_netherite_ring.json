@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "strawbeewwysepicmod:polished_netherite_ring"
+  },
+  "addition": {
+    "item": "strawbeewwysepicmod:pristine_sapphire"
+  },
+  "result": {
+    "item": "strawbeewwysepicmod:sapphire_netherite_ring"
+  }
+}

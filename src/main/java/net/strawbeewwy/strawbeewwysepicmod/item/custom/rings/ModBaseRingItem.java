@@ -53,13 +53,13 @@ public class ModBaseRingItem  extends Item {
 
         //generates a number (1-5) on crafting a base ring to determine it's quality
         final Random r = new Random();
-        int val = r.nextInt(100);
+        int val = r.nextInt(100) + type;
         int qual = 0;
         if (val <= 39)               {qual = 1;} //40%
         if (val > 39  && val <= 69)  {qual = 2;} //30%
         if (val > 69 && val <= 89)   {qual = 3;} //20%
         if (val >89 && val <= 98)    {qual = 4;} //9%
-        if (val == 99)               {qual = 5;} //1%
+        if (val >= 99)               {qual = 5;} //1%
 
         //test
         //System.out.println("RING QUALITY: " + val);
@@ -77,30 +77,16 @@ public class ModBaseRingItem  extends Item {
             assert stack.getNbt() != null;
             if (stack.getNbt().toString().contains("quality:1")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_1"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:2")) {
+            } else if (stack.getNbt().toString().contains("quality:2")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_2"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:3")) {
+            } else if (stack.getNbt().toString().contains("quality:3")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_3"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:4")) {
+            } else if (stack.getNbt().toString().contains("quality:4")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_4"));
-            }
-        }
-        if (stack.hasNbt()) {
-            assert stack.getNbt() != null;
-            if (stack.getNbt().toString().contains("quality:5")) {
+            } else if (stack.getNbt().toString().contains("quality:5")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_5"));
+            } else {
+                tooltip.add(new TranslatableText("item.strawbeewwysepicmod.qualityerror"));
             }
         }
     }

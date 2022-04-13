@@ -57,19 +57,19 @@
 
   "item.strawbeewwysepicmod.sapphire_gem_tip_line_1": "Crafting Material",
   "item.strawbeewwysepicmod.sapphire_gem_tip_line_2": "Stat Affinity: §aArmor§r",
-  "item.strawbeewwysepicmod.sapphire_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+  "item.strawbeewwysepicmod.sapphire_gem_tip_line_3": "§6Apply§r to items to enchant them",
 
   "item.strawbeewwysepicmod.ruby_gem_tip_line_1": "Crafting Material",
-  "item.strawbeewwysepicmod.ruby_gem_tip_line_2": "Stat Affinity: §aDamage§r",
-  "item.strawbeewwysepicmod.ruby_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+  "item.strawbeewwysepicmod.ruby_gem_tip_line_2": "Stat Affinity: §aHealth§r",
+  "item.strawbeewwysepicmod.ruby_gem_tip_line_3": "§6Apply§r to items to enchant them",
 
   "item.strawbeewwysepicmod.topaz_gem_tip_line_1": "Crafting Material",
-  "item.strawbeewwysepicmod.topaz_gem_tip_line_2": "Stat Affinity: §aHealth§r",
-  "item.strawbeewwysepicmod.topaz_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+  "item.strawbeewwysepicmod.topaz_gem_tip_line_2": "Stat Affinity: §aAttackspeed§r",
+  "item.strawbeewwysepicmod.topaz_gem_tip_line_3": "§6Apply§r to items to enchant them",
 
   "item.strawbeewwysepicmod.jade_gem_tip_line_1": "Crafting Material",
-  "item.strawbeewwysepicmod.jade_gem_tip_line_2": "Stat Affinity: §aAttackspeed§r",
-  "item.strawbeewwysepicmod.jade_gem_tip_line_3": "§6Apply§r to items to enchant them (WORK IN PROGRESS)",
+  "item.strawbeewwysepicmod.jade_gem_tip_line_2": "Stat Affinity: §aMouvementSpeed§r",
+  "item.strawbeewwysepicmod.jade_gem_tip_line_3": "§6Apply§r to items to enchant them",
 
   "item.strawbeewwysepicmod.ring": "Ring",
   "item.strawbeewwysepicmod.life": "Life",
@@ -78,6 +78,7 @@
   "item.strawbeewwysepicmod.quality_3": "Quality: §b★★★",
   "item.strawbeewwysepicmod.quality_4": "Quality: §d★★★★",
   "item.strawbeewwysepicmod.quality_5": "Quality: §6★★★★★",
+  "item.strawbeewwysepicmod.qualityerror": "An error occurred",
 
   "item.strawbeewwysepicmod.polished_copper_ring": "Polished Copper Ring",
   "item.strawbeewwysepicmod.ruby_copper_ring": "Ruby Copper Ring",
