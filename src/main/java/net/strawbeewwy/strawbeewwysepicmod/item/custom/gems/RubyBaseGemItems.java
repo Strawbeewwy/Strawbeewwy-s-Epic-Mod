@@ -13,6 +13,9 @@ import java.util.List;
 
 public class RubyBaseGemItems extends Item {
 
+    public RubyBaseGemItems(Settings settings) {
+        super(settings);
+    }
 
     @Override
     public void onCraft(ItemStack stack, World world, PlayerEntity player) {
@@ -38,9 +41,6 @@ public class RubyBaseGemItems extends Item {
         //System.out.println("NBT DATA: " + stack.getNbt().toString());
     }
 
-    public RubyBaseGemItems(Settings settings) {
-        super(settings);
-    }
 
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext tooltipContext){
         tooltip.add(new TranslatableText("item.strawbeewwysepicmod.ruby_gem_tip_line_1"));

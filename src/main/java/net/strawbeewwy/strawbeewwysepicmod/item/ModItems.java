@@ -28,17 +28,6 @@ public class ModItems {
     public static final Item RING_NETHERITE_SETTING = registerItem("ring_netherite_setting",
             new Item(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.COMMON)) );
 
-    public static final Item POLISHED_COPPER_RING = registerItem("polished_copper_ring",
-            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
-    public static final Item POLISHED_IRON_RING = registerItem("polished_iron_ring",
-            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
-    public static final Item POLISHED_GOLD_RING = registerItem("polished_gold_ring",
-            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
-    public static final Item POLISHED_DIAMOND_RING = registerItem("polished_diamond_ring",
-            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
-    public static final Item POLISHED_NETHERITE_RING = registerItem("polished_netherite_ring",
-            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
-
     public static final Item BASE_COPPER_RING = registerItem("base_copper_ring",
             new ModBaseRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     public static final Item BASE_GOLD_RING = registerItem("base_gold_ring",
@@ -50,6 +39,16 @@ public class ModItems {
     public static final Item BASE_NETHERITE_RING = registerItem("base_netherite_ring",
             new ModBaseRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
 
+    public static final Item POLISHED_COPPER_RING = registerItem("polished_copper_ring",
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+    public static final Item POLISHED_IRON_RING = registerItem("polished_iron_ring",
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+    public static final Item POLISHED_GOLD_RING = registerItem("polished_gold_ring",
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+    public static final Item POLISHED_DIAMOND_RING = registerItem("polished_diamond_ring",
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
+    public static final Item POLISHED_NETHERITE_RING = registerItem("polished_netherite_ring",
+            new ModRingItem(new FabricItemSettings().group(ModItemGroup.RINGS).maxCount(1)) );
     //GEAR
     //TRINKETS
     public static final Item RUBY_COPPER_RING = registerItem("ruby_copper_ring",

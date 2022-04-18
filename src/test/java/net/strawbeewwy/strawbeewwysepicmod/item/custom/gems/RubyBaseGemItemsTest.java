@@ -60,23 +60,21 @@ class RubyBaseGemItemsTest {
         SharedConstants.setGameVersion(MinecraftVersion.CURRENT);
         Bootstrap.initialize();
 
-        var item = new ModBaseRingItem(new Item.Settings());
+        var item = new RubyBaseGemItems(new Item.Settings());
         var stackContent = Mockito.mock(Item.class);
 
         Mockito.when(stackContent.asItem()).thenReturn(stackContent);
 
         var stack = new ItemStack(stackContent);
         var world = Mockito.mock(World.class);
-        var playerEntity = Mockito.mock(PlayerEntity.class);
 
         var tooltipContext = Mockito.mock(TooltipContext.class);
 
         List<Text> tooltip = new ArrayList<Text>();
         List<Text> spyList = Mockito.spy(tooltip);
 
-        item.onCraft(stack,world,playerEntity);
         item.appendTooltip(stack,world,spyList,tooltipContext);
 
-        Assertions.assertEquals(1,spyList.size());
+        Assertions.assertEquals(3,spyList.size());
     }
 }

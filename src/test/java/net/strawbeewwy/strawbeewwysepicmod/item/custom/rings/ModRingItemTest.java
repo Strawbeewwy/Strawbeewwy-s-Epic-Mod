@@ -1,12 +1,15 @@
 package net.strawbeewwy.strawbeewwysepicmod.item.custom.rings;
 
-import net.fabricmc.loader.impl.launch.FabricMixinBootstrap;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.impl.launch.FabricLauncherBase;
+import net.fabricmc.loader.impl.launch.MappingConfiguration;
 import net.minecraft.Bootstrap;
 import net.minecraft.MinecraftVersion;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import org.junit.jupiter.api.Assertions;
@@ -14,10 +17,12 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
 class ModRingItemTest {
+
 
     @Test
     void appendTooltipShouldAddToolTip() {
@@ -25,23 +30,30 @@ class ModRingItemTest {
         SharedConstants.setGameVersion(MinecraftVersion.CURRENT);
         Bootstrap.initialize();
 
+        int[] cases = {1,2,3,4,5};
+        NbtCompound nbtRing = new NbtCompound();
 
-        var item = new ModRingItem(new Item.Settings());
-        var stackContent = Mockito.mock(Item.class);
+        for (int test : cases) {
 
-        Mockito.when(stackContent.asItem()).thenReturn(stackContent);
+            var item = Mockito.mock(ModRingItem.class);
 
-        var stack = new ItemStack(stackContent);
-        var world = Mockito.mock(World.class);
+            Mockito.doCallRealMethod().when(item).appendTooltip(Mockito.any(),Mockito.any(),Mockito.any(),Mockito.any());
 
-        var tooltipContext = Mockito.mock(TooltipContext.class);
+            var stackContent = Mockito.mock(Item.class);
 
-        List<Text> tooltip = new ArrayList<Text>();
-        List<Text> spyList = Mockito.spy(tooltip);
+            Mockito.when(stackContent.asItem()).thenReturn(stackContent);
 
-        item.appendTooltip(stack,world,tooltip,tooltipContext);
+            var stack = new ItemStack(stackContent);
+            nbtRing.putInt("quality", test);
+            stack.setNbt(nbtRing);
 
-        Assertions.assertEquals(1,tooltip.size(),"List Size Should Be 1");
+            var world = Mockito.mock(World.class);
+            var tooltipContext = Mockito.mock(TooltipContext.class);
+            List<Text> tooltip = new ArrayList<Text>();
 
+            item.appendTooltip(stack,world,tooltip,tooltipContext);
+
+            Assertions.assertEquals(1,tooltip.size());
+        }
     }
 }

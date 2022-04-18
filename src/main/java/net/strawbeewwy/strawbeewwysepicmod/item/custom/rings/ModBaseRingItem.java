@@ -19,7 +19,6 @@ public class ModBaseRingItem  extends Item {
         super(settings);
     }
 
-    int ringQuality = 0;
 
     /*
     the final ring after all crafting steps has the following NBT; example is a "Ruby Copper Ring"
@@ -52,34 +51,28 @@ public class ModBaseRingItem  extends Item {
         //generates a number (1-5) on crafting a base ring to determine it's quality
         final Random r = new Random();
         int val = r.nextInt(100) + type*2;
-
-        if (val <= 39)               {setRingQuality(1);} //40%
-        if (val > 39  && val <= 69)  {setRingQuality(2);} //30%
-        if (val > 69 && val <= 89)   {setRingQuality(3);} //20%
-        if (val >89 && val <= 98)    {setRingQuality(4);} //9%
-        if (val >= 99)               {setRingQuality(5);} //1%
+        int quality = 0;
+        if (val <= 39)               {
+            quality = 1;} //40%
+        if (val > 39  && val <= 69)  {
+            quality = 2;} //30%
+        if (val > 69 && val <= 89)   {
+            quality = 3;} //20%
+        if (val >89 && val <= 98)    {
+            quality = 4;} //9%
+        if (val >= 99)               {
+            quality = 5;} //1%
 
         //test
         //System.out.println("RING QUALITY: " + val);
 
         NbtCompound nbtRing = new NbtCompound();
-        nbtRing.putInt("quality", getRingQuality());
+        nbtRing.putInt("quality", quality);
         nbtRing.putInt("type", type);
         stack.setNbt(nbtRing);
 
         //System.out.println("NBT DATA: " + stack.getNbt().toString());
     }
-
-    public void setRingQuality(int quality)
-    {
-        ringQuality = quality;
-    }
-
-    public int getRingQuality()
-    {
-        return ringQuality;
-    }
-
 
 
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext tooltipContext){
