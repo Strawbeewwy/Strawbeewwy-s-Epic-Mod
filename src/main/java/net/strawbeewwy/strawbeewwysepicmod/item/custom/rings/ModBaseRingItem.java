@@ -19,17 +19,15 @@ public class ModBaseRingItem  extends Item {
         super(settings);
     }
 
+    int ringQuality = 0;
+
     /*
     the final ring after all crafting steps has the following NBT; example is a "Ruby Copper Ring"
-    - id: polished_copper_ring
     - {CustomModelData:101} -> tells the polished ring what texture it should use.
          - 100, 200, ...  = copper, iron, gold, diamond, netherite ... (first digit tells material)
          - 101, 102, ... = gemtype (ruby, sapphire ..., second and third digit indicate the gem)
-    - {Name} -> custom name "Polished Copper Ring" -> "Ruby Copper Ring"
-    - {ruby_1:1b} -> the final item modifier function (chipped gem, flawed gem, ... of certain type)
     - {type:1} -> hook for the base rings (copper, iron, ...)
-    - {hasStats:1b} -> used as check to prevent double apply of gems etc.
-    - {quality:1}  -> used for the quality modifier, here +1% to the stats. (stars on the item)
+    - {quality:1}  -> used for the quality modifier (stars on the item)
     - Copper Rings take chipped gems, Iron Rings take flawed gems ...
      */
 
@@ -44,33 +42,45 @@ public class ModBaseRingItem  extends Item {
         super.onCraft(stack, world, player);
 
         int type = 0;
-        if (itemType.equals("base_copper_ring")) { type = 1;};
-        if (itemType.equals("base_iron_ring")) { type = 2;};
-        if (itemType.equals("base_gold_ring")) { type = 3;};
-        if (itemType.equals("base_diamond_ring")) { type = 4;};
-        if (itemType.equals("base_netherite_ring")) { type = 5;};
+        if (itemType.equals("base_copper_ring")) { type = 1;}
+        if (itemType.equals("base_iron_ring")) { type = 2;}
+        if (itemType.equals("base_gold_ring")) { type = 3;}
+        if (itemType.equals("base_diamond_ring")) { type = 4;}
+        if (itemType.equals("base_netherite_ring")) { type = 5;}
 
 
         //generates a number (1-5) on crafting a base ring to determine it's quality
         final Random r = new Random();
-        int val = r.nextInt(100) + type;
-        int qual = 0;
-        if (val <= 39)               {qual = 1;} //40%
-        if (val > 39  && val <= 69)  {qual = 2;} //30%
-        if (val > 69 && val <= 89)   {qual = 3;} //20%
-        if (val >89 && val <= 98)    {qual = 4;} //9%
-        if (val >= 99)               {qual = 5;} //1%
+        int val = r.nextInt(100) + type*2;
+
+        if (val <= 39)               {setRingQuality(1);} //40%
+        if (val > 39  && val <= 69)  {setRingQuality(2);} //30%
+        if (val > 69 && val <= 89)   {setRingQuality(3);} //20%
+        if (val >89 && val <= 98)    {setRingQuality(4);} //9%
+        if (val >= 99)               {setRingQuality(5);} //1%
 
         //test
         //System.out.println("RING QUALITY: " + val);
 
         NbtCompound nbtRing = new NbtCompound();
-        nbtRing.putInt("quality", qual);
+        nbtRing.putInt("quality", getRingQuality());
         nbtRing.putInt("type", type);
         stack.setNbt(nbtRing);
 
         //System.out.println("NBT DATA: " + stack.getNbt().toString());
     }
+
+    public void setRingQuality(int quality)
+    {
+        ringQuality = quality;
+    }
+
+    public int getRingQuality()
+    {
+        return ringQuality;
+    }
+
+
 
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext tooltipContext){
         if (stack.hasNbt()) {

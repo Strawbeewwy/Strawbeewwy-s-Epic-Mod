@@ -56,6 +56,7 @@ public class ModRingItemSapphire extends ModRingItem{
 
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
 
+
         if (friend == null || !stack.getName().asString().equals(friend.getDisplayName().asString())){
             List<? extends PlayerEntity> players = entity.getWorld().getPlayers();
             for (PlayerEntity player : players) {
