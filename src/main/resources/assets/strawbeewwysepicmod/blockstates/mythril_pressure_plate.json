@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "powered=false": { "model": "strawbeewwysepicmod:block/mythril_pressure_plate" },
-    "powered=true": { "model": "strawbeewwysepicmod:block/mythril_pressure_plate_down" }
-  }
-}

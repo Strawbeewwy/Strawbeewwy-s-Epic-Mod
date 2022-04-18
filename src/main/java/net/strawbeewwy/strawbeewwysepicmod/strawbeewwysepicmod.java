@@ -5,7 +5,6 @@ import net.minecraft.util.Identifier;
 import net.strawbeewwy.strawbeewwysepicmod.block.ModBlocks;
 import net.strawbeewwy.strawbeewwysepicmod.item.ModItems;
 import net.strawbeewwy.strawbeewwysepicmod.painting.ModPaintings;
-import net.strawbeewwy.strawbeewwysepicmod.util.ModRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,8 +20,6 @@ public class StrawbeewwysEpicMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModPaintings.registerPaintings();
-
-		ModRegistries.registerModStuffs();
 
 	}
 	public static Identifier id(String path) {

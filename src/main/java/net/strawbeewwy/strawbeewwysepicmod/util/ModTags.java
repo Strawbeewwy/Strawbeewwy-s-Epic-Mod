@@ -9,8 +9,6 @@ import net.strawbeewwy.strawbeewwysepicmod.StrawbeewwysEpicMod;
 
 public class ModTags {
     public static class Blocks {
-        public static final Tag.Identified<Block> DOWSING_ROD_DETECTABLE_BLOCKS =
-                createTag("dowsing_rod_detectable_blocks");
 
         private static Tag.Identified<Block> createTag(String name) {
             return TagFactory.BLOCK.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));
@@ -22,8 +20,6 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final Tag.Identified<Item> MYTHRIL_INGOTS = createCommonTag("mythril_ingots");
-        public static final Tag.Identified<Item> MYTHRIL_NUGGETS = createCommonTag("mythril_nuggets");
 
         private static Tag.Identified<Item> createTag(String name) {
             return TagFactory.ITEM.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "strawbeewwysepicmod:block/mythril_block",
-    "top": "strawbeewwysepicmod:block/mythril_block",
-    "side": "strawbeewwysepicmod:block/mythril_block"
-  }
-}
