@@ -21,6 +21,8 @@ public class ModTags {
 
     public static class Items {
 
+        public static final Tag<Item> TINY_RAW_RUBY = createCommonTag("tiny_raw_gems");
+
         private static Tag.Identified<Item> createTag(String name) {
             return TagFactory.ITEM.create(new Identifier(StrawbeewwysEpicMod.MOD_ID, name));
         }

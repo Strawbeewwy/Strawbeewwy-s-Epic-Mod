@@ -51,6 +51,7 @@ public class ModBaseRingItemTest {
             item.onCraft(stack,world,playerEntity);
 
             Assertions.assertEquals(test.getValue(),stack.getNbt().getInt("type"));
+
         }
     }
 
