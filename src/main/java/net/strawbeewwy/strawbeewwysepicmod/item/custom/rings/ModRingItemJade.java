@@ -61,6 +61,7 @@ public class ModRingItemJade extends ModRingItem{
             for (PlayerEntity player : players) {
                 if (stack.getName().asString().equals(player.getDisplayName().asString()))
                 {
+
                     friend = player;
                     friendUuid = player.getUuid();
                 }
