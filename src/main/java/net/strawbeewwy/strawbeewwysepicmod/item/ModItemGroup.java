@@ -8,7 +8,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
 
-    public static final ItemGroup RINGS = FabricItemGroupBuilder.build(new Identifier(StrawbeewwysEpicMod.MOD_ID, "rings"),
-            () -> new ItemStack(ModItems.RUBY));
+    public static ItemGroup RINGS;
+
+    ModItemGroup(){
+        RINGS = FabricItemGroupBuilder.build(new Identifier(StrawbeewwysEpicMod.MOD_ID, "rings"),
+                () -> new ItemStack(ModItems.RUBY));
+
+    }
 
 }

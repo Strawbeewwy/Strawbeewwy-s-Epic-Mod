@@ -48,8 +48,6 @@ public class ModRingItemJade extends ModRingItem{
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_5"));
                 effectiveRadius = 25;
                 effectAmplifier = 5;
-            } else {
-                tooltip.add(new TranslatableText("item.strawbeewwysepicmod.qualityerror"));
             }
         }
     }
@@ -61,14 +59,13 @@ public class ModRingItemJade extends ModRingItem{
             for (PlayerEntity player : players) {
                 if (stack.getName().asString().equals(player.getDisplayName().asString()))
                 {
-
                     friend = player;
                     friendUuid = player.getUuid();
                 }
             }
         }
 
-        if (friend!= null) {
+        if (friend != null) {
             if (friend.getPos().isInRange(entity.getPos(),effectiveRadius)) {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 5 * TPS, effectAmplifier));
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 5 * TPS, effectAmplifier));
@@ -80,5 +77,4 @@ public class ModRingItemJade extends ModRingItem{
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.clearStatusEffects();
     }
-
 }

@@ -55,6 +55,25 @@ public class ModBaseRingItemTest {
         }
     }
 
+    @Test
+    public void onCraftShouldHaveQualityOverZero() {
+
+        SharedConstants.setGameVersion(MinecraftVersion.CURRENT);
+        Bootstrap.initialize();
+
+        var item = new ModBaseRingItem(new Item.Settings());
+        var stackContent = Mockito.mock(Item.class);
+
+        Mockito.when(stackContent.asItem()).thenReturn(stackContent);
+
+        var stack = new ItemStack(stackContent);
+        var world = Mockito.mock(World.class);
+        var playerEntity = Mockito.mock(PlayerEntity.class);
+
+        item.onCraft(stack,world,playerEntity);
+        Assertions.assertTrue(stack.getNbt().getInt("quality") > 0);
+
+    }
 
     @Test
     public void AppendToolTipShouldAddToolTips() {

@@ -31,8 +31,6 @@ public class ModRingItem extends TrinketItem {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_4"));
             } else if (stack.getNbt().toString().contains("quality:5")) {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_5"));
-            } else {
-                tooltip.add(new TranslatableText("item.strawbeewwysepicmod.qualityerror"));
             }
         }
     }

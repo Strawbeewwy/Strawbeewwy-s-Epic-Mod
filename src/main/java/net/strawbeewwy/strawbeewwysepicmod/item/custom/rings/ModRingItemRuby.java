@@ -48,8 +48,6 @@ public class ModRingItemRuby extends ModRingItem {
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_5"));
                 effectiveRadius = 25;
                 effectAmplifier = 5;
-            } else {
-                tooltip.add(new TranslatableText("item.strawbeewwysepicmod.qualityerror"));
             }
         }
     }
@@ -79,5 +77,4 @@ public class ModRingItemRuby extends ModRingItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.clearStatusEffects();
     }
-
 }

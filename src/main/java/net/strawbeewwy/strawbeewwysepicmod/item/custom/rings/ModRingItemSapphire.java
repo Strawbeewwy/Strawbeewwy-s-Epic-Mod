@@ -48,14 +48,11 @@ public class ModRingItemSapphire extends ModRingItem{
                 tooltip.add(new TranslatableText("item.strawbeewwysepicmod.quality_5"));
                 effectiveRadius = 25;
                 effectAmplifier = 5;
-            } else {
-                tooltip.add(new TranslatableText("item.strawbeewwysepicmod.qualityerror"));
             }
         }
     }
 
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-
 
         if (friend == null || !stack.getName().asString().equals(friend.getDisplayName().asString())){
             List<? extends PlayerEntity> players = entity.getWorld().getPlayers();
@@ -76,9 +73,7 @@ public class ModRingItemSapphire extends ModRingItem{
         }
     }
 
-
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.clearStatusEffects();
     }
-
 }
