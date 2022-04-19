@@ -193,7 +193,7 @@ public class ModItems {
     public static final Item JADE = registerItem("jade",
             new JadeBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
 
-    public static final Item topaz = registerItem("topaz",
+    public static final Item TOPAZ = registerItem("topaz",
             new TopazBaseGemItems(new FabricItemSettings().group(ModItemGroup.RINGS).rarity(Rarity.UNCOMMON)) );
 
     public static final Item BRILLIANT_RUBY = registerItem("brilliant_ruby",
